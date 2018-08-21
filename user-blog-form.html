@@ -1,0 +1,198 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foundation for Sites</title>
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="icons/foundation-icons.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<!--nav-->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="menu">
+      <li class="menu-text">站点名称</li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="is-action"><a>首页</a></li>
+      <li>
+        <a href="#">菜单一</a>
+        <ul class="menu vertical">
+          <li><a>子菜单一</a></li>
+          <li><a>子菜单二</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">菜单二</a>
+        <ul class="menu vertical">
+          <li><a>子菜单二</a></li>
+          <li><a>子菜单二</a></li>
+        </ul>
+      </li>
+      <li><a>菜单三</a></li>
+      <li class="margin-left-3"><a class="button">登录</a></li>
+      <li class="margin-left-1 margin-right-2"><a class="button">注册</a></li>
+    </ul>
+    
+  </div>
+</div>
+
+<!--main-->
+<div class="grid-container margin-top-1 margin-bottom-3">
+    <div class="grid-x grid-margin-x">
+      <!--left-->
+      <div class="cell">
+          <div class="grid-x">
+              <nav aria-label="You are here:" role="navigation">
+                  <ul class="breadcrumbs">
+                    <li><a href="#0">Home</a></li>
+                    <li><a href="#0">Features</a></li>                    
+                    <li>
+                      <span class="show-for-sr">Current: </span> Cloning
+                    </li>
+                  </ul>
+              </nav>  
+          </div>
+          <div class="grid-x">            
+            <div class="cell large-2 medium-3 margin-top-2 margin-right-2  padding-right-1 shadow ">
+                <ul class="vertical menu accordion-menu" data-accordion-menu>
+                    <li>
+                      <a href="#">我的博客</a>
+                      <ul class="menu vertical nested">
+                        <li><a href="#">基本设置</a></li>
+                        <li><a href="#">博客分类</a></li>
+                        <li><a href="#">博客标签</a></li>
+                        <li><a href="#">博客文章</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">分类四</a></li>
+                  </ul>   
+            </div>
+            <div class="cell large-8 medium-7 margin-top-2   padding-1 shadow">                
+               右侧
+               <hr>
+               <div class="grid-x grid-margin-x">
+                  <div class="cell">
+                    <div data-abide-error class="alert callout" style="display: none;">
+                      <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                    </div>
+                  </div>
+                </div>
+               <form>
+                 <div class="grid-container">
+                   <div class="grid-x grid-padding-x">
+                     <div class="cell">
+                       <label>博客名称
+                         <input type="text" placeholder="输入博客名称">
+                         <span class="form-error">这是错误提示</span>
+                       </label>
+                       <p class="help-text">帮助说明</p>
+                     </div>
+                   </div>
+                   <div class="grid-x grid-padding-x">
+                      <div class="cell">
+                        <label>二级域名
+                          <input type="text" placeholder="输入二级域名">
+                          <span class="form-error">这是错误提示</span>
+                        </label>
+                        <p class="help-text">帮助说明</p>
+                      </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                        <div class="cell">
+                          <label>博客描述
+                            <textarea></textarea>
+                            <span class="form-error">这是错误提示</span>
+                          </label>
+                          <p class="help-text">帮助说明</p>
+                        </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                      <div class="cell">
+                        <label>下拉框
+                          <select>
+                            <option>选项一</option>
+                            <option>选项二</option>
+                            <option>选项三</option>
+                          </select>
+                          <span class="form-error">错误信息</span>
+                        </label>
+                        <p class="help-text">帮助说明</p>
+                      </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                      <div class="cell">
+                        <fieldset>
+                          <legend>复选框</legend>
+                          <input type="checkbox" name="checkbox" id="checkbox1"><label for="checkbox1">复选框1</label>
+                          <input type="checkbox" name="checkbox" id="checkbox2"><label for="checkbox2">复选框2</label>
+                          <input type="checkbox" name="checkbox" id="checkbox3"><label for="checkbox3">复选框3</label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                      <div class="cell">
+                        <fieldset>
+                          <legend>单选框</legend>
+                          <input type="radio" name="radio" id="radio1"><label for="radio1">单选框1</label>
+                          <input type="radio" name="radio" id="radio2"><label for="radio2">单选框2</label>
+                          <input type="radio" name="radio" id="radio3"><label for="radio3">单选框3</label>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="grid-x grid-padding-x">
+                      <div class="cell">
+                          <label for="exampleFileUpload" class="button success hollow">Upload File</label>
+                          <input type="file" id="exampleFileUpload" class="show-for-sr">
+                      </div>
+                    </div>
+                    <div class="grid-x grid-margin-x">
+                      <fieldset class="cell medium-6">
+                        <button class="button small " type="submit" value="Submit">Submit</button>
+                      </fieldset>
+                      <fieldset class="cell medium-6">
+                        <button class="button small  alert" type="reset" value="Reset">Reset</button>
+                      </fieldset>
+                    </div>
+                 </div>
+               </form>
+            </div>
+          </div>   
+                 
+      </div>    
+      <!--right-->
+      
+    </div>  
+</div>
+<footer>
+  <div class="callout primary ">
+      <div class="text-center">          
+          <p>
+                      本站总访问量：0
+            <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次
+          </p>
+          <p>
+            <span> Copyright ©<a href="/" rel="nofollow">Mash(Ma·sh).</a></span>
+            <span> ICP备案:<a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/"> 京ICP备18022754号</a></span>
+            <span> Powered by<a rel="nofollow" target="_blank" href="http://symfony.com/doc/current/index.html"> Symonfy4</a></span>
+          </p>
+        </div>
+  </div>
+</footer>
+
+
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
