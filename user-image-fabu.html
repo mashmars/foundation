@@ -161,6 +161,7 @@
     var myDropzone = new Dropzone("#myDropzone", {        
           //指定处理上传图片的路径
           url: "/JKQMgr/UploadImages",
+          paramName: "file", 
           //最大文件大小，单位是 MB
           maxFilesize: 5,
           //默认false。如果设为true，则会给文件添加上传取消和删除预览图片的链接
