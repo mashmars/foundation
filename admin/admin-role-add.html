@@ -144,80 +144,83 @@
                     </div>
                     <div class="grid-x  padding-1 shadow">
                         <div class="cell">
-                            <a class="button hollow primary small">
-                                <i class="fi-plus"></i>
-                                新增</a>
-                            <a class="button info small float-right search">搜索</a>
-                            <div id="search" class="clearfix">
-                                <form action="" method="post" id="form-search">
-                                    <div class="grid-x grid-padding-x">
-                                        <div class="large-2 small-4 cell">
-                                            <label for="type" class="text-right middle">类型:</label>
-                                        </div>
-                                        <div class="large-2 small-8 cell">
-                                            <select name="type" id="type">
-                                                <option value="11100">幼儿端</option>
-                                                <option value="11200">教师端</option>
-                                            </select>
-                                        </div> 
-                                        <div class="large-2 small-4 cell">
-                                            <label for="start_date" class="text-right middle">开始日期:</label>
-                                        </div>
-                                        <div class="large-2 small-8 cell">
-                                            <input type="text" id="start_date" name="start_date" placeholder="" {% if start_date %}value="{{ start_date|date('Y-m-d') }}" {% endif%}>
-                                        </div>
-                                        <div class="large-2 small-4 cell">
-                                            <label for="end_date" class="text-right middle">结束日期:</label>
-                                        </div>
-                                        <div class="large-2 small-8 cell">
-                                            <input type="text" id="end_date" name="end_date" placeholder="" {% if end_date %}value="{{ end_date|date('Y-m-d') }}" {% endif %}>
-                                        </div>                                   
-                                    </div>                                    
-                                    <div class="grid-x grid-padding-x">
-                                            <div class="large-3 cell large-offset-5 small-offset-4">
-                                            <button type="submit" class="button alert  hollow  margin-bottom-0 padding-tb" id="button-search"><i class="fi-page-search"></i> 查询</button>
-                                            <!--<button class="button success  hollow margin-bottom-0 padding-tb" id="export"><i class="fi-page-export"></i> 导 出</button>    -->
-                                        </div>
-                                    </div>                               
-                                </form>
+                            <div class="success callout" data-closable>
+                                <p>这是提示信息</p>
+                                <button class="close-button" aria-label="alert" type="button" data-close>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                            <hr>
-                            <table class="hover">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">ID</th>
-                                        <th class="text-center">名称</th>
-                                        <th class="text-center">操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="text-center">
-                                        <td>1</td>
-                                        <td>分类一</td>
-                                        <td>
-                                            <a class="hollow button small margin-bottom-0 padding-tb">
-                                                <i class="fi-pencil"></i>
-                                                编辑</a>
-                                            <a class="hollow button small alert margin-bottom-0 padding-tb">
-                                                <i class="fi-trash"></i>
-                                                删除</a>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td>1</td>
-                                        <td>分类一</td>
-                                        <td>
-                                            <a class="hollow button small margin-bottom-0 padding-tb">
-                                                <i class="fi-pencil"></i>
-                                                编辑</a>
-                                            <a class="hollow button small alert margin-bottom-0 padding-tb">
-                                                <i class="fi-trash"></i>
-                                                删除</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
+                            <form>
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell">
+                                        <label>角色名称
+                                            <input type="text">
+                                            <span class="form-error">错误信息</span>
+                                        </label>
+                                        <p class="help-text">帮助文件</p>
+                                    </div>
+                                    
+                                    <div class="cell">
+                                        <p>分配功能</p>
+                                        <hr>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="grid-x fieldset">
+                                            <div class="cell large-2 large-offset-1">
+                                                <div class="grid-x">
+                                                    <input type="checkbox" id="role1" class="controller admin-user" data-action="admin-user"><label for="role1">管理员管理</label>
+                                                </div>
+                                            </div>
+                                            <div class="cell large-9">
+                                                <div class="grid-x fieldset">
+                                                    <input type="checkbox" id="role1-1" class="action admin-user" data-action="admin-user"><label for="role1-1">查看</label>
+                                                    <input type="checkbox" id="role1-2" class="action admin-user" data-action="admin-user"><label for="role1-2">新增</label>
+                                                    <input type="checkbox" id="role1-3" class="action admin-user" data-action="admin-user"><label for="role1-3">编辑</label>
+                                                    <input type="checkbox" id="role1-4" class="action admin-user" data-action="admin-user"><label for="role1-4">删除</label>
+                                                    <input type="checkbox" id="role1-5" class="action admin-user" data-action="admin-user"><label for="role1-5">审核</label>
+                                                    <input type="checkbox" id="role1-6" class="action admin-user" data-action="admin-user"><label for="role1-6">发布</label>
+                                                    <input type="checkbox" id="role1-7" class="action admin-user" data-action="admin-user"><label for="role1-7">取消审核</label>
+                                                    <input type="checkbox" id="role1-8" class="action admin-user" data-action="admin-user"><label for="role1-8">管理员管理</label>
+                                                    <input type="checkbox" id="role1-9" class="action admin-user" data-action="admin-user"><label for="role1-9">管理员管理</label>
+                                                    <input type="checkbox" id="role1-10" class="action admin-user" data-action="admin-user"><label for="role1-10">管理员管理</label>
+                                                </div>
+                                                <hr>
+                                                <fieldset class="cell medium-6">                                                
+                                                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                                                <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+                                                <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="grid-x">
+                                            <div class="cell large-2 large-offset-1">
+                                                <div class="grid-x">
+                                                    <input type="checkbox" id="role2" class="controller admin-menu" data-action="admin-menu"><label for="role2">菜单管理</label>
+                                                </div>
+                                            </div>
+                                            <div class="cell large-9">
+                                                <div class="grid-x ">
+                                                    <input type="checkbox" id="role2-1" class="action admin-menu" data-action="admin-menu"><label for="role2-1">查看</label>
+                                                    <input type="checkbox" id="role2-2" class="action admin-menu" data-action="admin-menu"><label for="role2-2">新增</label>
+                                                    <input type="checkbox" id="role2-3" class="action admin-menu" data-action="admin-menu"><label for="role2-3">编辑</label>
+                                                    <input type="checkbox" id="role2-4" class="action admin-menu" data-action="admin-menu"><label for="role2-4">删除</label>
+                                                    <input type="checkbox" id="role2-5" class="action admin-menu" data-action="admin-menu"><label for="role2-5">审核</label>
+                                                    <input type="checkbox" id="role2-6" class="action admin-menu" data-action="admin-menu"><label for="role2-6">发布</label>
+                                                    <input type="checkbox" id="role2-7" class="action admin-menu" data-action="admin-menu"><label for="role2-7">取消审核</label>
+                                                    <input type="checkbox" id="role2-8" class="action admin-menu" data-action="admin-menu"><label for="role2-8">管理员管理</label>
+                                                    <input type="checkbox" id="role2-9" class="action admin-menu" data-action="admin-menu"><label for="role2-9">管理员管理</label>
+                                                    <input type="checkbox" id="role2-10" class="action admin-menu" data-action="admin-menu"><label for="role2-10">管理员管理</label>
+                                                </div>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="cell">
+                                        <button class="button small" type="button">提交</button>
+                                    </div>
+                                </div>                                
+                            </form>
                         </div>
                     </div>
                 </div>

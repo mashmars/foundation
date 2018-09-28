@@ -1,0 +1,8 @@
+body {overflow-x: hidden;}
+/*通用*/
+.margin-bottom-0{margin-bottom:0px ;}
+.padding-tb{padding:0.5rem 0.8rem;}
+/* nav */
+.top-bar, .top-bar ul {
+    background-color: #2c3840; 
+}

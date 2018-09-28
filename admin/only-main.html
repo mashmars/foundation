@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foundation for Sites</title>
+        <link rel="stylesheet" href="../css/foundation.css">
+        <link rel="stylesheet" href="../icons/foundation-icons.css">
+        <link rel="stylesheet" href="../css/app.css">
+        <link rel="stylesheet" href="./css/admin-css.css">
+        
+    </head>
+    <body>
+    <!--main-->
+    <div class="grid-container">
+        <div class="grid-x " style="min-height:581px;">                
+            <div class="cell padding-left-1 margin-top-1">                   
+                <div class="grid-x ">
+                    <div class="cell padding-left-1 padding-right-1 padding-top-1 shadow ">                           
+                        <form>
+                            <div class="grid-x grid-margin-x">
+                                <div class="cell">
+                                    <label>用户名
+                                        <input type="text">
+                                        <span class="form-error">错误信息</span>
+                                    </label>
+                                    <p class="help-text">帮助文件</p>
+                                </div>
+                                <div class="cell">
+                                    <label>登录密码
+                                        <input type="password" placeholder="mimia">
+                                    </label>
+                                </div>
+                                <div class="cell">
+                                    <label>描述信息
+                                        <textarea placeholder="d" rows=3></textarea>
+                                    </label>
+                                </div>
+                                <div class="cell">
+                                    <label>角色
+                                        <select>
+                                            <option>超级管理员</option>
+                                            <option>普通管理员</option>
+                                            <option>其他用户</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <div class="cell">
+                                    <button class="button small" type="button">提交</button>
+                                </div>
+                            </div>                                
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+        <script src="../js/vendor/jquery.js"></script>
+        <!--<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>-->
+        <script src="../js/vendor/what-input.js"></script>
+        <script src="../js/vendor/foundation.js"></script>
+        <script src="../js/app.js"></script>
+        
+        <script src="../lib/layer/layer.js"></script>
+        
+        <script>
+            $(function () {
+                $('.search').click(function () {
+                    $('#search').toggle();
+                })
+            })
+        </script>
+    </body>
+</html>
