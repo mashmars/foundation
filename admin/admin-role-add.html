@@ -261,6 +261,35 @@
             $('.search').click(function () {
                 $('#search').toggle();
             })
+            //全选 or 全不选
+            $('.controller').click(function(){
+                var checked = $(this).prop('checked');
+                var action = $(this).attr('data-action');
+                if(checked){
+                    $('.'+action).each(function(){
+                        $(this).prop('checked',true);
+                    })
+                }else{
+                    $('.'+action).each(function(){
+                        $(this).prop('checked',false);
+                    })
+                }
+            })
+            //子项 有一个选中 则父也选中 如果都不选中 父也不选中
+            $('.action').click(function(){
+                var action = $(this).attr('data-action');
+                var checked = false;
+                $('.action.'+action).each(function(){
+                    if($(this).prop('checked')){
+                        checked = true;
+                    }
+                })
+                if(checked){
+                    $('.controller.'+action).prop('checked',true);
+                }else{
+                    $('.controller.'+action).prop('checked',false);
+                }
+            })
         })
     </script>
     </body>
