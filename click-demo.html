@@ -1,0 +1,372 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foundation for Sites</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="icons/foundation-icons.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="lib/foundation-datepicker/css/foundation-datepicker.min.css">
+        
+    </head>
+    <body>
+
+        <!--nav-->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text">站点名称</li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="dropdown menu" data-dropdown-menu="data-dropdown-menu">
+                    <li class="is-action">
+                        <a>首页</a>
+                    </li>
+                    <li>
+                        <a href="#">菜单一</a>
+                        <ul class="menu vertical">
+                            <li>
+                                <a>子菜单一</a>
+                            </li>
+                            <li>
+                                <a>子菜单二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">菜单二</a>
+                        <ul class="menu vertical">
+                            <li>
+                                <a>子菜单二</a>
+                            </li>
+                            <li>
+                                <a>子菜单二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a>菜单三</a>
+                    </li>
+                    <li class="margin-left-3">
+                        <a class="button">登录</a>
+                    </li>
+                    <li class="margin-left-1 margin-right-2">
+                        <a class="button">注册</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        
+
+        <div class="product-filters">
+                <!-- <ul class="mobile-product-filters vertical menu show-for-small-only" data-accordion-menu>
+                        <li>
+                          <a href="#"><h2>Products</h2></a>   
+                          <ul class="vertical menu" data-accordion-menu>
+                           <li class="product-filters-tab">
+                             <a href="#">Category</a>
+                             <ul class="categories-menu menu vertical nested is-active">
+                                <a href="#" class="clear-all" id="category-clear-all">Clear All</a> 
+                                <li><input class="category-clear-selection" id="category-checkbox1" type="checkbox"><label for="category-checkbox1">Category 1</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox2" type="checkbox"><label for="category-checkbox2">Category 2</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox3" type="checkbox"><label for="category-checkbox3">Category 3</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox4" type="checkbox"><label for="category-checkbox4">Category 4</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox5" type="checkbox"><label for="category-checkbox5">Category 5</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox6" type="checkbox"><label for="category-checkbox6">Category 6</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox7" type="checkbox"><label for="category-checkbox7">Category 7</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox8" type="checkbox"><label for="category-checkbox8">Category 8</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox9" type="checkbox"><label for="category-checkbox9">Category 9</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox10" type="checkbox"><label for="category-checkbox10">Category 10</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox11" type="checkbox"><label for="category-checkbox11">Category 11</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox12" type="checkbox"><label for="category-checkbox12">Category 12</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox13" type="checkbox"><label for="category-checkbox13">Category 13</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox14" type="checkbox"><label for="category-checkbox14">Category 14</label></li>
+                                <li><input class="category-clear-selection" id="category-checkbox15" type="checkbox"><label for="category-checkbox15">Category 15</label></li>
+                              </ul>
+                          </li>
+                          <li class="product-filters-tab">
+                             <a href="#">Size</a>
+                             <ul class="categories-menu menu vertical nested is-active">
+                               <a href="#" class="clear-all" id="size-clear-all">Clear All</a>  
+                               <li><input id="size-checkbox1" type="checkbox"><label for="size-checkbox1">Small</label></li>
+                               <li><input id="size-checkbox2" type="checkbox"><label for="size-checkbox2">Medium</label></li>
+                               <li><input id="size-checkbox3" type="checkbox"><label for="size-checkbox3">Large</label></li>
+                               <li><input id="size-checkbox3" type="checkbox"><label for="size-checkbox3">X-Large</label></li>
+                               <li><input id="size-checkbox3" type="checkbox"><label for="size-checkbox3">XX-Large</label></li>
+                             </ul>
+                     
+                           </li>
+                          <li class="product-filters-tab">
+                             <a href="#">Color</a>
+                             <ul class="categories-menu menu vertical nested">
+                               <a href="#" class="clear-all" id="color-clear-all">Clear All</a>  
+                               <li><input id="color-checkbox1" type="checkbox"><label for="color-checkbox1">All Color</label></li>
+                               <li><input id="color-checkbox2" type="checkbox"><label for="color-checkbox2">Black</label></li>
+                               <li><input id="color-checkbox3" type="checkbox"><label for="color-checkbox3">White</label></li>
+                               <li><input id="color-checkbox4" type="checkbox"><label for="color-checkbox4">Grey</label></li>
+                               <li><input id="color-checkbox5" type="checkbox"><label for="color-checkbox5">Red</label></li>
+                               <li><input id="color-checkbox6" type="checkbox"><label for="color-checkbox6">Blue</label></li>
+                               <li><input id="color-checkbox7" type="checkbox"><label for="color-checkbox7">Green</label></li>
+                               <li><input id="color-checkbox8" type="checkbox"><label for="color-checkbox8">Purple</label></li>
+                               <li><input id="color-checkbox8" type="checkbox"><label for="color-checkbox8">Multi-color</label></li>
+                             </ul>
+                           </li>
+                          <li class="product-filters-tab"> 
+                             <a href="#">Price</a>
+                             <ul class="categories-menu menu vertical nested">
+                               <a href="#" class="clear-all" id="price-clear-all">Clear All</a> 
+                               <li><input id="price-checkbox1" type="checkbox"><label for="price-checkbox1">Under $25</label></li>
+                               <li><input id="price-checkbox2" type="checkbox"><label for="price-checkbox2">$25–$50</label></li>
+                               <li><input id="price-checkbox3" type="checkbox"><label for="price-checkbox3">$50–$250</label></li>
+                               <li><input id="price-checkbox4" type="checkbox"><label for="price-checkbox4">$250–$600</label></li>
+                               <li><input id="price-checkbox4" type="checkbox"><label for="price-checkbox4">$600–$1,000</label></li>
+                             </ul>
+                           </li>
+                          </ul>
+                        </li>
+                      </ul> -->
+               
+               
+                    <fieldset class="fieldset level1">
+                        <legend class="product-filters-header"><input type="checkbox" id="level-1-1"><label for="level-1-1">母语</label></legend>
+                        <ul class="vertical menu level2" data-accordion-menu>
+                            <label href="#"><input type="checkbox" id="level-2-1"><label for="level-2-1">字宝宝乐园</label></label>
+                            <li class="product-filters-tab">
+                                <a href="#">字宝宝乐园-幼儿端</a>
+                                <ul class="categories-menu menu vertical nested">
+                                    <a href="#" class="level3"><input type="checkbox" id="level-3-1-all"><label for="level-3-1-all" style="color:red">全选</label></a>
+                                    <li><input id="level-4-1" type="checkbox"><label for="level-4-1">Category 1</label></li>
+                                    <li><input id="level-4-2" type="checkbox"><label for="level-4-2">Category 2</label></li>
+                                </ul>
+                            </li>
+                            <li class="product-filters-tab">
+                                <a href="#">字宝宝乐园-教师端</a>
+                                <ul class="categories-menu menu vertical nested">
+                                    <a href="#" class="level3"><input type="checkbox" id="level-3-2-all"><label for="level-3-2-all" style="color:red">全选</label></a>
+                                    <li><input id="level-4-3" type="checkbox"><label for="level-4-3">Category 3</label></li>
+                                    <li><input id="level-4-4" type="checkbox"><label for="level-4-4">Category 4</label></li>
+                                </ul>
+                            </li>
+                        </ul>                        
+                    </fieldset>
+                    
+                    <fieldset class="fieldset level1">
+                            <legend class="product-filters-header"><input type="checkbox" id="level-1-2"><label for="level-1-2">母语2</label></legend>
+                            <ul class="vertical menu level2" data-accordion-menu>
+                                <label href="#"><input type="checkbox" id="level-2-2"><label for="level-2-2">字宝宝乐园2</label></label>
+                                <li class="product-filters-tab">
+                                    <a href="#">字宝宝乐园-幼儿端2</a>
+                                    <ul class="categories-menu menu vertical nested">
+                                        <a href="#" class="level3"><input type="checkbox" id="level-3-22-all"><label for="level-3-22-all" style="color:red">全选</label></a>
+                                        <li><input id="level-4-21" type="checkbox"><label for="level-4-21">Category 1</label></li>
+                                        <li><input id="level-4-22" type="checkbox"><label for="level-4-22">Category 2</label></li>
+                                    </ul>
+                                </li>
+                                <li class="product-filters-tab">
+                                    <a href="#">字宝宝乐园-教师端</a>
+                                    <ul class="categories-menu menu vertical nested">
+                                        <a href="#" class="level3"><input type="checkbox" id="level-3-12-all"><label for="level-3-12-all" style="color:red">全选</label></a>
+                                        <li><input id="level-4-13" type="checkbox"><label for="level-4-13">Category 3</label></li>
+                                        <li><input id="level-4-14" type="checkbox"><label for="level-4-14">Category 4</label></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </fieldset>
+              </div>
+              
+<style>
+    
+.product-filters {
+    padding: 0.5rem 1.5rem;
+    background-color: #fefefe;
+    margin-top: 2.5rem;
+  }
+  
+  .product-filters label {
+    color: #8a8a8a;
+  }
+  
+  .product-filters .menu.nested {
+    margin-left: 0rem;
+    margin-bottom: 0.9rem;
+  }
+  
+  .product-filters .menu > li > a {
+    padding-left: 0;
+    color: #4a4a4a;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  
+  .product-filters .is-accordion-submenu-parent > a::after {
+    border-color: #cacaca transparent transparent;
+  }
+  
+  .product-filters .clear-all {
+    font-size: 0.9rem;
+    color: #cacaca;
+  }
+  
+  .product-filters .more {
+    color: #1779ba;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .product-filters-header {
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+  }
+  
+  .product-filters-tab {
+    border-top: 1px solid #e6e6e6;
+  }
+  
+  .product-filters-tab:last-child() {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .mobile-product-filters {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  
+</style>              
+
+
+
+
+<input type="text" class="span2" id="dp1">
+<footer>
+    <div class="callout secondary">
+        底部
+    </div>
+</footer>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+<script src="lib/foundation-datepicker/js/foundation-datepicker.min.js"></script>
+<script src="lib/foundation-datepicker/js/locales/foundation-datepicker.zh-CN.js"></script>
+
+<script>
+    $('#dp1').fdatepicker({
+        initialDate: '2018-07-01',
+        format: 'yyyy-mm-dd',
+        // keyboardNavigation: false,
+        disableDblClickSelection: true,
+        language: 'zh-CN',
+        leftArrow: '<<',
+        rightArrow: '>>',
+        closeIcon: 'X',
+        closeButton: true
+        // autoShow: false
+    });
+</script>
+<script>
+    //More (Expand) or Less (Collapse)
+    $('.categories-menu.menu.nested').each(function () {
+        var filterAmount = $(this).find('li').length;
+        if (filterAmount > 5) {
+            $('li', this).eq(4).nextAll().hide().addClass('toggleable');
+            $(this).append('<li class="more">More</li>');
+        }
+    });
+
+    $('.categories-menu.menu.nested').on('click', '.more', function () {
+        if ($(this).hasClass('less')) {
+            $(this).text('More').removeClass('less');
+        } else {
+            $(this).text('Less').addClass('less');
+        }
+        $(this).siblings('li.toggleable').slideToggle();
+    });
+
+    //一级全选or全不选
+    $('.product-filters-header input').click(function(){
+        if($(this).prop('checked')){
+            $(this).parents('fieldset').find('input').prop('checked' , true);
+        }else{
+            $(this).parents('fieldset').find('input').prop('checked' , false);
+        }
+    })
+    //二级全选or全不选
+    $('.level2 label input').click(function(){
+        if($(this).prop('checked')){
+            $(this).parents('ul').find('input').prop('checked' , true);
+        }else{
+            $(this).parents('ul').find('input').prop('checked' , false);
+        }
+    })
+    //三级全选or全不选
+    $('.level3 input').click(function(){
+        if($(this).prop('checked')){
+            $(this).parents('.product-filters-tab').find('input').prop('checked' , true);
+        }else{
+            $(this).parents('.product-filters-tab').find('input').prop('checked' , false);
+        }
+       
+    })
+    
+    /////反推 
+    //三级四级点击事件
+    $('.product-filters-tab input').click(function(){
+        var flag_3 = flag_2 = flag_1 = true; //三级 二级 一级标记
+        $(this).parents('.product-filters-tab').find('li>input').each(function(){        
+            //如果下面都选中了 给第三级选中            
+            if(!$(this).prop('checked')){
+                flag_3 = false;
+            }
+        })       
+        if(flag_3){
+            $(this).parents('.product-filters-tab').find('.level3>input').prop('checked',true);
+        }else{
+            $(this).parents('.product-filters-tab').find('.level3>input').prop('checked',false);
+        }
+        //找三级
+        $(this).parents('.level2').find('.level3>input').each(function(){ 
+            if(!$(this).prop('checked')){
+                flag_2 = false;
+            }
+        })
+        if(flag_2){
+            $(this).parents('.level2').find('label>input').prop('checked',true);
+        }else{
+            $(this).parents('.level2').find('label>input').prop('checked',false);
+        }
+        //找二级
+        $(this).parents('.level2').find('label>input').each(function(){ 
+            if(!$(this).prop('checked')){
+                flag_1 = false;
+            }
+        })
+        if(flag_1){
+            $(this).parents('.level1').find('legend>input').prop('checked',true);
+        }else{
+            $(this).parents('.level1').find('legend>input').prop('checked',false);
+        }
+    });
+    ////二级点击事件
+    $(".level2 input").click(function(){
+        var flag = true;
+        $(this).parents('.level1').find('.level2 label>input').each(function(){
+            if(!$(this).prop('checked')){
+                flag = false;
+            }
+        })
+        if(flag){
+            $(this).parents('.level1').find('legend>input').prop('checked',true);
+        }else{
+            $(this).parents('.level1').find('legend>input').prop('checked',false);
+        }
+    })
+
+</script>
+    </body>
+</html>
